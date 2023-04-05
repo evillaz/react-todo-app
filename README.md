@@ -51,12 +51,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [To do List React App] <a name="about-project"></a>
 
-*Math Magicians* is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+*To do List React App* is a website to keep on tracking to do tasks. It is a Single Page App (SPA) that allows users to:
 
-- Make simple calculations.
-- Read a random math-related quote.
+- Register new to do tasks.
+- Edit, delete to do tasks.
+- Get into a home, about, profile, and login tab
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -132,7 +133,7 @@ Run this command:
 Example command:
 
 ```sh
-  cd math-magicians
+  cd react-todo-app
   npm install
 ```
 
@@ -144,7 +145,7 @@ Run this command:
 Example command:
 
 ```sh
-  cd math-magicians
+  cd react-todo-app
   npm start
 ```
 
