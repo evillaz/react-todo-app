@@ -15,7 +15,7 @@ const Login = () => {
     if (!username) return;
     login(username);
     setUsername('');
-    navigate(from, {replace: true});
+    navigate(from, { replace: true });
   };
   return (
     <div>
@@ -30,7 +30,7 @@ const Login = () => {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <button type='submit'>Login</button>
+          <button type="submit">Login</button>
         </form>
       </div>
     </div>

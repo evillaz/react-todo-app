@@ -4,7 +4,7 @@ import {
   createContext,
   useContext,
 } from 'react';
-
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 
 const TodosContext = createContext(null);
@@ -67,7 +67,7 @@ export const TodosProvider = ({ children }) => {
   };
 
   return (
-    <TodosContext.Provider 
+    <TodosContext.Provider
       value={{
         todos,
         handleChange,
@@ -80,4 +80,9 @@ export const TodosProvider = ({ children }) => {
     </TodosContext.Provider>
   );
 };
+
+TodosProvider.propTypes = {
+  children: PropTypes.node.isRequired, // Add prop validation for children prop
+};
+
 export const useTodosContext = () => useContext(TodosContext);
