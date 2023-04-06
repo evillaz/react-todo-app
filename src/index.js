@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import TodoApp from './components/TodoApp';
 import './styles/app.css';
+import reportWebVitals from './reportWebVitals';
 
 const domContainer = document.getElementById('root');
 const root = ReactDOM.createRoot(domContainer);
@@ -14,3 +15,5 @@ root.render(
     </Router>
   </React.StrictMode>,
 );
+
+reportWebVitals();
